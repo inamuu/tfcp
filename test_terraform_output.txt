@@ -23,9 +23,9 @@ Terraform will perform the following actions:
 ╷
 │ Warning: Argument is deprecated
 │
-│   with module.iam.aws_iam_role.lambda_sidekiq_monitoring,
-│   on modules/iam/lambda.tf line 293, in resource "aws_iam_role" "lambda_sidekiq_monitoring":
-│  293: resource "aws_iam_role" "lambda_sidekiq_monitoring" {
+│   with module.iam.aws_iam_role.sample,
+│   on modules/iam/sample.tf line 293, in resource "aws_iam_role" "sample":
+│  293: resource "aws_iam_role" "sample" {
 │
 │ inline_policy is deprecated. Use the aws_iam_role_policy resource instead. If Terraform should exclusively
 │ manage all inline policy associations (the current behavior of this argument), use the
@@ -34,11 +34,11 @@ Terraform will perform the following actions:
 ╷
 │ Warning: Invalid Attribute Combination
 │
-│   with module.s3.aws_s3_bucket_lifecycle_configuration.video_interview_answers_encoded,
-│   on modules/s3/main.tf line 68, in resource "aws_s3_bucket_lifecycle_configuration" "xxxx":
-│   68: resource "aws_s3_bucket_lifecycle_configuration" "xxxx" {
+│   with module.s3.aws_s3_bucket_lifecycle_configuration.example,
+│   on modules/s3/main.tf line 68, in resource "aws_s3_bucket_lifecycle_configuration" "example":
+│   68: resource "aws_s3_bucket_lifecycle_configuration" "example" {
 │
-│ No attribute specified when one (and only one) of [rule[0].filter,rule[0].prefix] is required
+│ No attribute specified when one (and only one) of [rule[0].filter] is required
 │
 │ This will be an error in a future version of the provider
 │
